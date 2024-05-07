@@ -5,9 +5,11 @@
       "destination": "https://cendy.co"
     }
   ],
-  "functions": {
-    "api/spotify.py": {
-      "runtime": "python3.11"
+  "builds": [
+    {
+      "src": "api/spotify.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
     }
-  }
+  ]
 }
