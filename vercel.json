@@ -1,8 +1,13 @@
- {
+{
   "redirects": [
     {
       "source": "/",
       "destination": "https://cendy.co"
     }
-  ]
+  ],
+  "functions": {
+    "api/spotify.py": {
+      "runtime": "python3.11"
+    }
+  }
 }
